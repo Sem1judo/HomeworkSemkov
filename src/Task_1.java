@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Task_1 {
     private static int number;
 
-    public static Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
 
 
     public static int scanNumber() {
