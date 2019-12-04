@@ -78,14 +78,12 @@ public class Task_1_5 {
     }
 
     public static void init() {
-        int row, col;
-        System.out.println("Enter columns");
-        row = scanner.nextInt();
-        System.out.println("Enter rows");
-        col = scanner.nextInt();
-        Task_1_5 m = new Task_1_5(row, col);
+        int size;
+        System.out.println("Enter size");
+        size = scanner.nextInt();
+        Task_1_5 m = new Task_1_5(size, size);
         m.DisplayMatrix();
-        m.numberOfChange(m, col);
+        m.numberOfChange(m, size);
 
 
     }
