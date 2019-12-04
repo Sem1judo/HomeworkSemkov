@@ -13,7 +13,6 @@ public class Task_1_3 {
         int noOfRows = scanNumber();
 
         int rowCount = 1;
-        System.out.println("Here Is Your Pyramid");
 
         for (int i = noOfRows; i > 0; i--) {
             for (int j = 1; j <= i * 2; j++) {
