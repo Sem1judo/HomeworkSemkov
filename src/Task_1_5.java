@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Task_1_5 {
 
@@ -6,6 +7,9 @@ public class Task_1_5 {
     int rows;
     int cols;
     Random rand = new Random();
+   static Scanner scanner = new Scanner(System.in);
+
+
 
 
     Task_1_5(int rows, int cols) {
@@ -74,9 +78,15 @@ public class Task_1_5 {
     }
 
     public static void init() {
-        Task_1_5 m = new Task_1_5(4, 4);
+        int row, col;
+        System.out.println("Enter columns");
+        row = scanner.nextInt();
+        System.out.println("Enter rows");
+        col = scanner.nextInt();
+        Task_1_5 m = new Task_1_5(row, col);
         m.DisplayMatrix();
-        m.numberOfChange(m, 4);
+        m.numberOfChange(m, col);
+
 
     }
 
