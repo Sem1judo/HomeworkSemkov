@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Task_1_5 {
 
-    int [][] element;
+    int[][] element;
     int rows;
     int cols;
     Random rand = new Random();
@@ -15,7 +15,7 @@ public class Task_1_5 {
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                element[i][j] = rand.nextInt(50);
+                element[i][j] = rand.nextInt(10);
             }
         }
     }
@@ -36,7 +36,7 @@ public class Task_1_5 {
         return this.cols;
     }
 
-    private void changeRowsCols(){
+    private void changeRowsCols() {
         int tmp;
         tmp = this.getNoRows();
         this.rows = this.getNoCols();
@@ -52,8 +52,8 @@ public class Task_1_5 {
         }
     }
 
-    private void rotate90(){
-        int [][] rotMat = new int[this.cols][this.rows];
+    private void rotate90() {
+        int[][] rotMat = new int[this.cols][this.rows];
 
         for (int rw = 0; rw < this.rows; rw++)
             for (int cl = 0; cl < this.cols; cl++) {
@@ -65,7 +65,7 @@ public class Task_1_5 {
 
     }
 
-    private  void numberOfChange(Task_1_5 m, int cols){
+    private void numberOfChange(Task_1_5 m, int cols) {
         for (int i = 0; i < cols; i++) {
             m.rotate90();
             System.out.println(" ");
@@ -73,10 +73,10 @@ public class Task_1_5 {
         }
     }
 
-    public static void init(){
-        Task_1_5 m = new  Task_1_5(2, 4);
+    public static void init() {
+        Task_1_5 m = new Task_1_5(4, 4);
         m.DisplayMatrix();
-        m.numberOfChange(m,4);
+        m.numberOfChange(m, 4);
 
     }
 
